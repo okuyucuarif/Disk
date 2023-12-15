@@ -2,20 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "Disk",
+    name: "DiskPM",
     platforms: [.iOS(.v9)],
     products: [
-        .library(name: "Disk", targets: ["Disk"])
+        .library(name: "DiskPM", targets: ["DiskPM"])
     ],
     targets: [
         .target(
-            name: "Disk",
+            name: "DiskPM",
             path: "Sources",
             exclude: ["DiskExample"]
         ),
         .testTarget(
             name: "DiskTests",
-            dependencies: ["Disk"],
+            dependencies: ["DiskPM"],
             path: "Tests",
             exclude:  ["DiskExample"]
         )
